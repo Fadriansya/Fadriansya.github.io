@@ -1,0 +1,212 @@
+body {
+  justify-content: center;
+  align-items: center;
+}
+
+/* NAVBAR  */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.jumbotron {
+  padding: 2rem;
+  background-color: #b4ccf3;
+  justify-content: center;
+  align-items: center;
+}
+
+.Services {
+  padding: 6rem;
+}
+
+.Portfolio {
+  padding: 100px;
+  background-color: #b4ccf3;
+}
+
+.wrap .typing {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+}
+
+#typing-text {
+  font-size: 40px;
+  font-family: sans-serif, monospace, "Times New Roman", Times, serif;
+  color: rgb(3, 37, 138);
+  overflow: hidden;
+  border-right: 0.1em solid rgb(4, 0, 255); /* Pergantian warna dan lebar garis untuk efek pengetikan */
+  white-space: nowrap;
+  margin: 0 auto;
+  animation: typing 5s steps(0, end), blink-caret 0.5s step-end infinite alternate;
+}
+
+/* Animasi untuk efek pengetikan */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* Animasi untuk kursor */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: rgb(4, 0, 255);
+  }
+}
+
+/* SKILLS */
+#skills {
+  padding: 6rem;
+  background-color: rgb(212, 212, 211);
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 3rem;
+}
+
+.belajar {
+  display: flex;
+  gap: 2rem;
+}
+
+.belajar .line {
+  padding: 0 1rem;
+}
+
+.belajar .line div {
+  width: 2px;
+  height: 100%;
+  background-color: rgb(138, 138, 138);
+  position: relative;
+}
+
+.belajar-info p {
+  margin: 1rem 0 1rem;
+}
+
+.belajar-tahun {
+  margin-bottom: 3rem;
+}
+
+/* THE DOT ON THE LINE */
+.belajar .line div::before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  background-color: rgb(138, 138, 138);
+  border-radius: 50px;
+  position: absolute;
+  left: -6px;
+}
+
+.skills-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 1rem;
+}
+
+.skills-right ul {
+  line-height: 2rem;
+  padding: 0 1rem;
+}
+
+/* CONTACT */
+#contact {
+  padding: 6rem;
+  background-color: #b4ccf3;
+}
+
+.contact {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 3rem;
+}
+
+.contact-form div {
+  margin-bottom: 0.6rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.7rem 1.3rem;
+  font-family: sans-serif;
+  background-color: rgb(233, 237, 233);
+  border: 1px solid rgb(17, 6, 118);
+  border-radius: 3px;
+  resize: none;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: rgb(76, 82, 104);
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border: 1px solid gray;
+}
+
+.btn-submit {
+  width: 100%;
+  padding: 1rem 1rem;
+  background-color: rgb(113, 151, 233);
+  color: rgb(254, 241, 241);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.btn-submit:hover {
+  background-color: rgb(0, 0, 173);
+}
+
+.contact-item {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.contact-item-icon {
+  background-color: rgb(201, 230, 240);
+  width: 53px;
+  height: 53px;
+  border-radius: 9px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-item-icon svg {
+  fill: rgb(11, 72, 241);
+}
+
+.contact-item-icon svg:hover {
+  fill: rgb(4, 6, 12);
+}
+
+.contact-item-detail h4 {
+  margin-bottom: 1rem;
+}
+
+/* FOOTER */
+footer {
+  padding: 4rem;
+  background-color: rgb(247, 247, 247);
+  text-align: center;
+}
