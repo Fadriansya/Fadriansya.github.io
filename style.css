@@ -197,7 +197,7 @@ body {
 }
 
 .contact-item-icon svg:hover {
-  fill: rgb(255, 0, 0);
+  fill: rgb(0, 255, 38);
 }
 
 .contact-item-detail h4 {
