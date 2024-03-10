@@ -69,12 +69,34 @@ body {
 #skills {
   padding: 6rem;
   background-color: rgb(212, 212, 211);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 400px) {
+  #skills {
+    margin: auto;
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px));
+    width: 95%;
+  }
+
+  .skills-grid {
+    display: flex;
+    gap: 1rem;
+  }
+}
+
+.skills-main-container {
+  display: grid;
 }
 
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  gap: 3rem;
+  gap: 1rem;
 }
 
 .belajar {
@@ -127,6 +149,14 @@ body {
 #contact {
   padding: 6rem;
   background-color: #b4ccf3;
+}
+
+@media (max-width: 400px) {
+  .contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .contact {
