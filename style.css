@@ -85,12 +85,12 @@ body {
     margin: auto;
     background-color: white;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     width: 95%;
   }
 
   .skills-grid {
-    display: flex;
+    display: grid;
     gap: 1rem;
   }
 }
@@ -100,9 +100,10 @@ body {
 }
 
 .skills-grid {
-  display: flex;
+  padding: 1rem;
+  display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  gap: 200px;
+  gap: 1rem;
 }
 
 .belajar {
