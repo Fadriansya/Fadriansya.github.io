@@ -75,7 +75,7 @@ body {
 #skills {
   padding: 6rem;
   background-color: rgb(212, 212, 211);
-  display: flex;
+  display: grid;
   justify-content: center;
   align-items: center;
 }
@@ -100,14 +100,14 @@ body {
 }
 
 .skills-grid {
-  display: grid;
+  display: flex;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  gap: 1rem;
+  gap: 200px;
 }
 
 .belajar {
   display: flex;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 .belajar .line {
@@ -144,11 +144,17 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin-top: 1rem;
+  gap: 1rem;
 }
 
-.skills-right ul {
-  line-height: 2rem;
-  padding: 0 1rem;
+.skills-list ul {
+  display: block;
+  gap: 1rem;
+}
+
+.skills-right p {
+  line-height: 1rem;
+  padding: 1rem;
 }
 
 /* Contact Section */

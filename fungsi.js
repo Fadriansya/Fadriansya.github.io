@@ -2,7 +2,7 @@
 var words = ["Human", "Student", "Gamer"];
 var index = 0;
 var isDeleting = false;
-var typingSpeed = 170; // Kecepatan pengetikan (dalam milidetik)
+var typingSpeed = 150; // Kecepatan pengetikan (dalam milidetik)
 
 function type() {
   var typingDiv = document.getElementById("typing-text");
