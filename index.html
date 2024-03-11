@@ -55,21 +55,27 @@
 
   <!-- profile -->
   <section class="jumbotron text-center">
-    <img src="img/myfoto.jpg" alt="Nasrullah" width="200-" class="rounded-circle" data-aos="fade-down"
+    <img src="img/myfoto.jpg" alt="Nasrullah" width="200" class="rounded-circle" data-aos="fade-down"
       data-aos-easing="linear" data-aos-duration="1000">
     <div class="wrap">
       <div class="typing">
         <h1 class="display-3 text-primary" data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500"
           data-aos-duration="1000">
-          Welcome To My Portfolio Website</h1>
-        <h1 data-aos="fade-right" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="1500">
-          Nasrullah Akbar</h1>
-        <h1 class="text text-center text-danger" data-aos="fade-down-right">I'am</span>
+          Welcome To My Portfolio Website
         </h1>
-        <div id="typing-text">text berada disini</div>
+        <h1 data-aos="fade-right" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="1500">
+          Nasrullah Akbar
+        </h1>
+        <div class="container">
+          <h1 class="text text-center text-danger" data-aos="fade-down-right">I am</h1>
+          <div id="typing-text">text berada disini
+          </div>
+        </div>
       </div>
     </div>
+
   </section>
+
   <!-- profile end -->
 
   <!-- ABOUT ME -->
@@ -122,7 +128,7 @@
       </div>
 
       <!-- CARD 2 -->
-      <div class="col-md-4 mb-3" data-aos="flip-left" data-aos-duration="2000" data-aos-once="false">
+      <div class="col-md-4 mb-3" data-aos="flip-left" data-aos-duration="2000">
         <div class="card">
           <img src="img/foto-2.jpg" class="card-img-top" alt="foto-2">
           <div class="card-body">
@@ -225,14 +231,15 @@
   <!-- CONTACT -->
   <section id="contact">
     <div class="contact main-container">
-      <div class="contact-left">
+      <div class="contact-left" data-aos="zoom-in-right" data-aos-offset="200" data-aos-delay="100"
+        data-aos-duration="2000">
         <form class="contact-form" action="https://formspree.io/f/xnqeplro" method="post">
           <div>
             <input type="text" placeholder="Name" id="name" name="name" required><br>
             <span id="name-error" class="error"></span>
           </div>
           <div>
-            <input type="email" placeholder="name@example.com" name="email" required>
+            <input type="email" placeholder="name@example.com" id="email" name="email" required>
             <span id="email-error" class="error"></span>
           </div>
           <div>
@@ -243,7 +250,8 @@
           </div>
         </form>
       </div>
-      <div class="contact-right">
+      <div class="contact-right" data-aos="zoom-in-left" data-aos-offset="200" data-aos-delay="100"
+        data-aos-duration="2000">
         <!-- CONTACT ITEM 1 -->
         <div class="contact-item">
           <div class="contact-item-icon">
@@ -322,9 +330,9 @@
             fill-rule="nonzero" />
         </svg>
       </a>
-      <p>
+      <h4>
         DONE GAK BANG? DONEE
-      </p>
+      </h4>
     </div>
     <p>&#169; 2024 - Made by Nasrullah</p>
   </footer>

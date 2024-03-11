@@ -21,10 +21,6 @@ function type() {
   // Kecepatan pengetikan
   var speed = typingSpeed;
 
-  if (isDeleting) {
-    speed /= 2; // Jika sedang menghapus, kecepatannya dibagi 2
-  }
-
   // Menunggu sebelum menambah atau menghapus huruf berikutnya
   if (!isDeleting && typingDiv.textContent === word) {
     isDeleting = true;

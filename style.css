@@ -1,33 +1,35 @@
+/* General */
 body {
   justify-content: center;
   align-items: center;
 }
 
-/* NAVBAR  */
+/* Navbar */
 .navbar {
   position: sticky;
   top: 0;
   z-index: 1000;
 }
 
+/* Jumbotron */
 .jumbotron {
   padding: 3rem;
   background-color: #b4ccf3;
-  justify-content: center;
-  align-items: center;
 }
 
-.typing {
-  overflow: hidden;
-  opacity: none;
+/* Typing Animation */
+#typing-text {
+  display: inline;
 }
 
+/* Services Section */
 .Services {
   padding: 6rem;
 }
 
+/* Portfolio Section */
 .Portfolio {
-  padding: 100px;
+  padding: 6rem;
   background-color: #b4ccf3;
 }
 
@@ -43,13 +45,13 @@ body {
   font-family: sans-serif, monospace, "Times New Roman", Times, serif;
   color: rgb(3, 37, 138);
   overflow: hidden;
-  border-right: 0.1em solid rgb(4, 0, 255); /* Pergantian warna dan lebar garis untuk efek pengetikan */
+  border-right: 0.1em solid rgb(4, 0, 255);
   white-space: nowrap;
   margin: 0 auto;
   animation: typing 5s steps(0, end), blink-caret 0.5s step-end infinite alternate;
 }
 
-/* Animasi untuk efek pengetikan */
+/* Typing Animation Keyframes */
 @keyframes typing {
   from {
     width: 0;
@@ -59,7 +61,6 @@ body {
   }
 }
 
-/* Animasi untuk kursor */
 @keyframes blink-caret {
   from,
   to {
@@ -70,7 +71,7 @@ body {
   }
 }
 
-/* SKILLS */
+/* Skills Section */
 #skills {
   padding: 6rem;
   background-color: rgb(212, 212, 211);
@@ -128,7 +129,7 @@ body {
   margin-bottom: 3rem;
 }
 
-/* THE DOT ON THE LINE */
+/* The Dot on the Line */
 .belajar .line div::before {
   content: "";
   width: 15px;
@@ -150,7 +151,7 @@ body {
   padding: 0 1rem;
 }
 
-/* CONTACT */
+/* Contact Section */
 #contact {
   padding: 6rem;
   background-color: #b4ccf3;
@@ -164,15 +165,7 @@ body {
   }
 }
 
-@media (max-width: 400px) {
-  .contact {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-}
-
-@media (max-width: 300px) {
+@media (max-width: 400px), (max-width: 300px) {
   .contact {
     display: flex;
     justify-content: center;
@@ -255,7 +248,7 @@ body {
   margin-bottom: 1rem;
 }
 
-/* FOOTER */
+/* Footer */
 footer {
   padding: 4rem;
   background-color: rgb(247, 247, 247);
@@ -265,6 +258,7 @@ footer {
 .footer-icon a svg {
   fill: crimson;
 }
+
 .footer-icon a svg:hover {
   fill: rgb(0, 255, 34);
 }
