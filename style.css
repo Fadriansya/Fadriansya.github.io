@@ -11,10 +11,15 @@ body {
 }
 
 .jumbotron {
-  padding: 2rem;
+  padding: 3rem;
   background-color: #b4ccf3;
   justify-content: center;
   align-items: center;
+}
+
+.typing {
+  overflow: hidden;
+  opacity: none;
 }
 
 .Services {
@@ -151,7 +156,23 @@ body {
   background-color: #b4ccf3;
 }
 
+@media (max-width: 500px) {
+  .contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
 @media (max-width: 400px) {
+  .contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 300px) {
   .contact {
     display: flex;
     justify-content: center;
