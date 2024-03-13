@@ -1,7 +1,8 @@
 {
-    "window.zoomLevel": 0,
-    "editor.fontSize": 16,
-    "workbench.colorTheme":"Noctis Minimus",
-    "workbench.iconTheme": "vscode-icons",
-    "editor.tabSize": 2,
+  "window.zoomLevel": 0,
+  "editor.fontSize": 16,
+  "workbench.colorTheme": "Noctis Minimus",
+  "workbench.iconTheme": "vscode-icons",
+  "editor.tabSize": 2,
+  "liveServer.settings.port": 5501
 }

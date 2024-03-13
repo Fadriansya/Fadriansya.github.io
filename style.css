@@ -27,10 +27,18 @@ body {
   padding: 6rem;
 }
 
+.blok-1 {
+  text-align: justify;
+}
+
 /* Portfolio Section */
 .Portfolio {
   padding: 6rem;
   background-color: #b4ccf3;
+}
+
+.card-body .card-title {
+  text-align: center;
 }
 
 .wrap .typing {
