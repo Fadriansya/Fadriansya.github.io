@@ -11,15 +11,41 @@ body {
   z-index: 1000;
 }
 
+.nama-saya {
+  color: white;
+}
+
+.nama-saya:hover {
+  color: rgb(16, 241, 5);
+}
+
 /* Jumbotron */
 .jumbotron {
   padding: 3rem;
   background-color: #b4ccf3;
 }
 
+.jumbotron img {
+  box-shadow: 0px 0px 10px white;
+}
+
 /* Typing Animation */
 #typing-text {
   display: inline;
+}
+
+.typing .welcome {
+  text-transform: uppercase;
+  font-size: 50px;
+  font-weight: bold;
+  text-shadow: 5px 5px 8px black;
+}
+
+.typing .arul {
+  text-shadow: 5px 5px 8px black;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 50px;
 }
 
 /* Services Section */
@@ -28,7 +54,7 @@ body {
 }
 
 .blok-1 {
-  text-align: justify;
+  text-align: center;
 }
 
 /* Portfolio Section */
@@ -38,6 +64,10 @@ body {
 }
 
 .card-body .card-title {
+  text-align: center;
+}
+
+.card-body .card-text {
   text-align: center;
 }
 
